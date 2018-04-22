@@ -95,3 +95,50 @@ else:
     print("False")
 
 print("*"*100)
+
+# TYPE() AND ID()
+x = (1, 'two', 3.0, [4, 'four'], 5)
+y = [1, 'two', 3.0, [4, 'four'], 5]
+print('x is {}'.format(x))
+print('y is {}'.format(y))
+print(type(x))
+print(type(x[0]))
+print(type(x[1]))
+print(type(x[2]))
+print(type(x[3]))
+print(type(x[4]))
+print(id(x[0]))
+print(id(x[1]))
+print(id(x[2]))
+print(id(x[3]))
+print(id(x[4]))
+print(type(y))
+print(type(y[0]))
+print(type(y[1]))
+print(type(y[2]))
+print(type(y[3]))
+print(type(y[4]))
+print(id(y[0]))
+print(id(y[1]))
+print(id(y[2]))
+print(id(y[3]))
+print(id(y[4]))
+
+if x[0] is y[0]:
+    print("Yep!")
+else:
+    print("Nope!")
+
+if isinstance(x, tuple):
+    print("Yep! A tuple!")
+elif isinstance(x, list):
+    print("Yep! A list!")
+else:
+    print("Nope!")
+
+if isinstance(y, tuple):
+    print("Yep! A tuple!")
+elif isinstance(y, list):
+    print("Yep! A list!")
+else:
+    print("Nope!")
