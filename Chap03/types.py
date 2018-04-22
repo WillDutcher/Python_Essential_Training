@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Copyright 2009-2017 BHG http://bw.org/
 
+# OVERVIEW
+
 x = 7
 print('x is {}'.format(x))
 print(type(x))
@@ -35,6 +37,8 @@ print(type(x))
 
 print("*"*100)
 
+# THE STRING TYPE
+
 a = 8
 b = 9
 c = f'seven {a} {b}'
@@ -49,3 +53,26 @@ print('z is {}'.format(z))
 print('zz is {}'.format(zz))
 print(type(x))
 print(type(y))
+
+print("*"*100)
+
+# NUMERIC TYPES
+
+x = 7 * 3.14159
+y = 7 / 3
+z = 7 // 3
+
+print('x is {}'.format(x))
+print(type(x))
+print(type(y))
+print(type(z))
+
+a = .1 + .1 + .1 - .3 # Returns bad number
+print(a)
+# DO NOT USE FLOATING POINT NUMBERS WITH MONEY!
+# DO THIS INSTEAD!
+from decimal import *
+b = Decimal('.10')
+c = Decimal('.30')
+d = b + b + b - c
+print(d)
