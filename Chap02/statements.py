@@ -3,6 +3,12 @@
 
 import platform
 
+new = "\nLook, I added something else to this!"
 version = platform.python_version()
 
+def myFunc():
+    global new
+    print(new)
+
 print('This is python version {}'.format(version))
+myFunc()
