@@ -9,4 +9,7 @@ def main():
 def message():
     print('This is python version {}'.format(platform.python_version()))
 
+# By having this conditional statement, below, that calls main
+# it actually forces the interpreter to read the entire script
+# before it executes any of the code.
 if __name__ == '__main__': main()
