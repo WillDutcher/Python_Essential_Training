@@ -9,4 +9,9 @@ while b < 1000:
     print(b, end = ' ', flush = True)
     a, b = b, a + b
 
-print() # line ending
+print('\n') # line ending
+
+x, y = 0, 1
+while y < 11000:
+    print(y, end = ' ', flush = True)
+    x, y = y, x + y

@@ -3,6 +3,12 @@
 
 words = ['one', 'two', 'three', 'four', 'five']
 
+j = 0
 for i in words:
-    print(i)
-
+    if j == 0:
+        print('The first word is ', i)
+    elif j == 4:
+        print('The last word is ', i)
+    else:
+        print('The next word is ', i)
+    j += 1
