@@ -93,3 +93,5 @@ if z:
     print("True")
 else:
     print("False")
+
+print("*"*100)
