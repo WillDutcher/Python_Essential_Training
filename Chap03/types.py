@@ -76,3 +76,20 @@ b = Decimal('.10')
 c = Decimal('.30')
 d = b + b + b - c
 print(d)
+
+print("*"*100)
+
+# THE BOOL TYPE
+
+x = True
+y = 7 < 5
+z = None # None, zero, and empty string values evaluate to False; all else is true
+print('x is {}'.format(x))
+print('y is {}'.format(y))
+print('z is {}'.format(z))
+print(type(x))
+
+if z:
+    print("True")
+else:
+    print("False")
