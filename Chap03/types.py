@@ -32,3 +32,20 @@ print(type(x))
 x = {"A":1,"B":2,"C":3}
 print('x is {}'.format(x))
 print(type(x))
+
+print("*"*100)
+
+a = 8
+b = 9
+c = f'seven {a} {b}'
+print("c = ", c)
+x = 'seven {1} {0}'.format('first option', 'second option')
+z = 'seven "{1:<9}" "{0:>9}"'.format(10,3)
+zz = 'seven "{1:<09}" "{0:>09}"'.format(145680,3)
+y = 'seven'.upper()
+print('x is {}'.format(x))
+print('y is {}'.format(y))
+print('z is {}'.format(z))
+print('zz is {}'.format(zz))
+print(type(x))
+print(type(y))
