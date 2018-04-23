@@ -24,3 +24,20 @@ elif x == 4:
     print("four is true")
 else:
     print("none is true")
+
+# Comparison Operators
+print("Comparison Operators")
+print("-"*20)
+print("==\ta == b\tEqual")
+print("!=\ta != b\tNot Equal")
+print("<\ta < b\tLess than")
+print(">\ta > b\tGreater than")
+print("<=\ta <= b\tLess than or equal to")
+print(">=\ta >= b\tGreater than or equal to")
+print("and\tx and y\tTrue if both x and y")
+print("or\tx or y\tTrue if x or y")
+print("not\tnot x\tInvert state\n")
+print("x is y\t\tTrue if the same object")
+print("x is not y\tTrue if not the same object")
+print("x is y\t\tTrue if x member of collection y")
+print("x is not y\tTrue if x not member of collection y")
