@@ -20,3 +20,22 @@ def puppy(x):
 # i.e. if another module used import statement to bring in this module, below = False then
 # But since it is being run by typing 'python function.py' it will run as __main__
 if __name__ == '__main__': main()
+print("*"*100,"\n")
+
+def main():
+    x = 10
+    dog(x)
+    print(f'in main: x is {x}')
+    kitten(5, 6, 7)
+    dog(5)
+
+def kitten(a, b, c, d = 'potato'):
+    print("Meow.")
+    print(a, b, c, d)
+
+def dog(x):
+    x = 3
+    print('Arf.')
+    print(x)
+
+if __name__ == '__main__': main()
