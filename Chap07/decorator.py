@@ -3,16 +3,16 @@
 
 import time
 
-def elapsed_time(f):
+def elapsed_time(f): # f = the big_sum function
     def wrapper():
         t1 = time.time()
-        f()
+        f() # Calls big_sum function
         t2 = time.time()
         print(f'Elapsed time: {(t2 - t1) * 1000} ms')
     return wrapper
 
 
-@elapsed_time
+@elapsed_time # Only called when elapsed_time function is called
 def big_sum():
     num_list = []
     for num in (range(0, 10000)):
