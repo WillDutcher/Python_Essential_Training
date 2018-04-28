@@ -3,7 +3,11 @@
 
 def main():
     kitten('meow', 'grrr', 'purr')
+    x = ('A','B','C','D','E')
+    kitten()
+    kitten(*x)
 
+# *args = variable length argument list
 def kitten(*args):
     if len(args):
         for s in args:
