@@ -39,3 +39,16 @@ def dog(x):
     print(x)
 
 if __name__ == '__main__': main()
+print("*"*100,"\n")
+
+def main():
+    x = kitten()
+    print(type(x), x)
+
+def kitten():
+    print('Meow.')
+    y = dict(a = 1, b = 2, c = 3)
+    return y, [43,2,54]
+
+
+if __name__ == '__main__': main()
