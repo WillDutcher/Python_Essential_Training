@@ -11,7 +11,7 @@ def main():
     s = set("It's a bird! It's a plane! It's Superman!")
     d = dict( one = r, two = l, three = s )
     mixed = [ l, r, s, d, t ]
-    disp(mixed)
+    disp(mixed) # Display mixed variable results
 
 def disp(o):
     global dlevel
@@ -22,7 +22,7 @@ def disp(o):
     elif isinstance(o, tuple): print_tuple(o)
     elif isinstance(o, set):   print_set(o)
     elif isinstance(o, dict):  print_dict(o)
-    elif o is None: print('Nada', end=' ', flush=True)
+    elif o is None: print('Nothing here', end=' ', flush=True)
     else: print(repr(o), end=' ', flush=True)
     dlevel -= 1
 
