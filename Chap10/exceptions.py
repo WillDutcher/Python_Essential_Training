@@ -5,7 +5,7 @@ def inclusive_range(*args):
     numargs = len(args)
     start = 0
     step = 1
-    
+
     # initialize parameters
     if numargs < 1:
         raise TypeError(f'expected at least 1 argument, got {numargs}')
@@ -24,8 +24,11 @@ def inclusive_range(*args):
         i += step
 
 def main():
-    for i in inclusive_range(25):
-        print(i, end = ' ', flush = True)
-    print()
+    try:
+        for i in inclusive_range(25,1,1,1,1):
+            print(i, end = ' ', flush = True)
+        print()
+    except TypeError as e:
+        print(f'Range Error: {e}')
 
 if __name__ == '__main__': main()
