@@ -6,7 +6,7 @@ class RevStr(str):
         return self[::-1]
 
 def main():
-    hello = RevStr('Hello, World.')
+    hello = RevStr(input("Say something: "))
     print(hello)
 
 if __name__ == '__main__': main()

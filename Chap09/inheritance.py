@@ -26,13 +26,17 @@ class Duck(Animal):
     def __init__(self, **kwargs):
         self._type = 'duck'
         if 'type' in kwargs: del kwargs['type']
-        super().__init__(**kwargs)
+        super().__init__(**kwargs) # super() always calls the parent class
 
 class Kitten(Animal):
     def __init__(self, **kwargs):
         self._type = 'kitten'
         if 'type' in kwargs: del kwargs['type']
-        super().__init__(**kwargs)
+        super().__init__(**kwargs) # super() always calls the parent class
+
+    def kill(self, s):
+        print(f'{self.name()} will now kill all {s}!')
+
 
 def print_animal(o):
     if not isinstance(o, Animal):
@@ -44,5 +48,6 @@ def main():
     a1 = Duck(name = 'donald', sound = 'quack')
     print_animal(a0)
     print_animal(a1)
+    a0.kill('humans')
 
 if __name__ == '__main__': main()
