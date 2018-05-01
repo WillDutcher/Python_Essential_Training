@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 # Copyright 2009-2017 BHG http://bw.org/
 
+# An iterator is a class that provides a sequence of items, generally used in a loop.
+
 class inclusive_range:
     def __init__(self, *args):
         numargs = len(args)
         self._start = 0
         self._step = 1
-        
+
         if numargs < 1:
             raise TypeError(f'expected at least 1 argument, got {numargs}')
         elif numargs == 1:
@@ -18,7 +20,7 @@ class inclusive_range:
         else: raise TypeError(f'expected at most 3 arguments, got {numargs}')
 
         self._next = self._start
-    
+
     def __iter__(self):
         return self
 
@@ -34,5 +36,13 @@ def main():
     for n in inclusive_range(25):
         print(n, end=' ')
     print()
-
+    for n in range(25):
+        print(n, end=' ')
+    print()
+    for n in inclusive_range(10,100,10):
+        print(n, end=' ')
+    print()
+    for n in range(10,100,10):
+        print(n, end=' ')
+    print()
 if __name__ == '__main__': main()
