@@ -11,10 +11,11 @@ __version__ = '1.2.0'
 
 class bwDB:
     def __init__(self, **kwargs):
+        # First string after a function is a doc string to serve as documentation
         """
             db = bwDB( [ table = ''] [, filename = ''] )
             constructor method
-                table is for CRUD methods 
+                table is for CRUD methods
                 filename is for connecting to the database file
         """
         # see filename @property decorators below
@@ -204,7 +205,7 @@ def test():
     # -- for file-based database
     # try: os.stat(fn)
     # except: pass
-    # else: 
+    # else:
     #     print('Delete', fn)
     #     os.unlink(fn)
 
@@ -245,7 +246,12 @@ def test():
     for r in db.getrecs():
         print(dict(r))
     for r in db.sql_query(f"select * from {t}"):
-        print(r)
+        print()
+        print('String: ', r)
+        print('Dictionary: ', dict(r))
+        print('Tuple: ', tuple(r))
+        print('List: ', list(r))
+        print()
     db.close()
 
 
